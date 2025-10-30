@@ -1,0 +1,79 @@
+:root {
+  --bg: #f7f7f8;
+  --card: #ffffff;
+  --accent: #2563eb;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  padding: 50px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial;
+  color: #0f172a;
+  background: radial-gradient(
+      1200px 500px at 10% 10%,
+      #ffd27d 0%,
+      transparent 15%
+    ),
+    radial-gradient(1000px 600px at 90% 90%, #ff7aa2 0%, transparent 18%),
+    linear-gradient(90deg, #ffecd2 0%, #fcb69f 50%, #f093fb 100%);
+}
+
+.container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+}
+.app-card .title {
+  font-weight: 800;
+  font-size: 18px;
+}
+.app-card .tdl {
+  background: linear-gradient(135deg, #e11d48 0%, #fb923c 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-flex;
+  align-items: center;
+}
+
+.container {
+  width: 40vw;
+  max-width: 860px;
+  min-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 0 6px 0;
+}
+
+.app-card .subtitle {
+  color: #6b7280;
+  font-size: 13px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.delete {
+  background: transparent;
+  border: 0;
+  color: #e11d48;
+  cursor: pointer;
+}
